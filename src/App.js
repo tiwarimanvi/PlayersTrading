@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 const App = () => {
   // Players holding lottery tickets
   const [players, setPlayers] = useState([]);
-  const [tickets, setTickets] = useState(5);
+  const [tickets, setTickets] = useState(3);
   const [loading, setLoading] = useState(false);
 
   // Set players and tickets remaining
@@ -14,7 +14,7 @@ const App = () => {
     // TODO 9 - Fetch players and tickets remaining from storage
     (async () => {
       setPlayers([]);
-      setTickets(5);
+      setTickets(3);
     })();
   }, []);
 
