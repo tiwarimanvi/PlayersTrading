@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { connectWallet, getAccount } from "../utils/wallet";
 
-const Navbar = () => {
-  const [account, setAccount] = useState("");
+const Navbar: React.FC = () => {
+  const [account, setAccount] = useState<string>("");
 
   useEffect(() => {
     (async () => {
@@ -11,7 +12,8 @@ const Navbar = () => {
   }, []);
 
   // TODO 4.a - Complete onConnectWallet function
-  const onConnectWallet = async () => {};
+  const onConnectWallet = async () => {
+  };
 
   return (
     <div className="navbar navbar-dark bg-dark fixed-top">
@@ -21,7 +23,7 @@ const Navbar = () => {
         </a>
         <div className="d-flex">
           {/* TODO 4.b - Call connectWallet function onClick  */}
-          <button className="btn btn-outline-info">
+          <button  className="btn btn-outline-info">
             {/* TODO 5.a - Show account address if wallet is connected */}
             Connect Wallet
           </button>

@@ -1,28 +1,32 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // Components
 import Navbar from "./components/Navbar";
 
-const App = () => {
+const App: React.FC = () => {
   // Players holding lottery tickets
-  const [players, setPlayers] = useState([]);
-  const [tickets, setTickets] = useState(3);
-  const [loading, setLoading] = useState(false);
+  const [players, setPlayers] = useState<string[]>([]);
+  const [tickets, setTickets] = useState<number>(3);
+  const [loading, setLoading] = useState<boolean>(false);
 
   // Set players and tickets remaining
   useEffect(() => {
     // TODO 9 - Fetch players and tickets remaining from storage
-    (async () => {
+    const fetchData = async () => {
       setPlayers([]);
       setTickets(3);
-    })();
+    };
+
+    fetchData();
   }, []);
 
   // TODO 7.a - Complete onBuyTicket function
-  const onBuyTicket = async () => {};
+  const onBuyTicket = async () => {
+  };
 
   // TODO 11.a - Complete onEndGame function
-  const onEndGame = async () => {};
+  const onEndGame = async () => {
+  };
 
   return (
     <div className="h-100">
@@ -32,13 +36,13 @@ const App = () => {
         <div className="py-1">Tickets remaining: {tickets}</div>
         {/* Action Buttons */}
         {tickets > 0 ? (
-          <button className="btn btn-primary btn-lg">
+          <button  className="btn btn-primary btn-lg">
             {/* TODO 7.b - Call onBuyTicket on click */}
             {/* TODO 7.c - Show "loading..." when buying operation is pending */}
             Buy Ticket
           </button>
         ) : (
-          <button className="btn btn-success btn-lg">
+          <button  className="btn btn-success btn-lg">
             {/* TODO 11.b - Call onEndGame on click */}
             {/* TODO 11.c - Show "loading..." when buying operation is pending */}
             End Game
