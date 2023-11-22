@@ -1,0 +1,12 @@
+.background-container {
+    height: 640px;
+    background-image: url('E:\Projects\Blockchain\dapps\players\PlayersTrading\public\logo6.avif');
+    background-size:cover;
+    background-position: center;
+  }
+ 
+  .heading{
+    font-size: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
