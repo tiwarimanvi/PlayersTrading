@@ -3,12 +3,16 @@ import { isAdmin } from "./isAdmin";
 import axios from "axios";
 import SiteHeader from "./Siteheader";
 import FooterNFT from "./FooterNFT";
+// import { connectWallet, getAccount } from "../utils/wallet";
+// import { wallet } from "../utils/wallet";
+
 
 const CreateNFT: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [heading, setHeading] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const userWalletAddress = 'tz1Tve8tP2pbCJKXVhJpyhM1AD9qiaGHC9yZ';
+  // const userWalletAddress = getAccount();
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
@@ -38,7 +42,6 @@ const CreateNFT: React.FC = () => {
         return;
       }
 
-      // Log the name of the uploaded file
       console.log("File name:", file.name);
 
       const formData = new FormData();

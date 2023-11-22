@@ -15,7 +15,7 @@ function SiteHeader() {
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
   };
-
+  
   return (
     <header>
       <div className="container">

@@ -18,7 +18,6 @@ function Home_nft() {
       // Wallet is connected, perform buy logic
       alert('Buy clicked!');
     } else {
-      // Wallet is not connected, give alert
       alert('Wallet not connected. Please connect your wallet.');
     }
   };
@@ -40,9 +39,6 @@ function Home_nft() {
            <div className="">
              <img src={alumni.flag} alt="profile-picture" className='flag' />
            </div>
-           {/* <div>
-            <button>{alumni.no}</button>
-           </div> */}
            </div>
           <div>
             <button className="submit-button" onClick={handleBuyClick}>
