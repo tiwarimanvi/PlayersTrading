@@ -19,14 +19,16 @@ function SiteHeader() {
       <div className="container">
         <div className="text">
           <div className="logo">
-            <img src="logo.png" alt="Logo" />
+            <img src="logo.jpeg" alt="Logo" />
           </div>
           <div className="Name">
-            <h4>Nepal Public Grievance Management System</h4>
-            <p>नेपाल सार्वजनिक गुनासो व्यवस्थापन प्रणाली</p>
+            <h4>PlayersTrading</h4>
           </div>
         </div>
         <div className="links">
+          <button className="home">home</button>
+          <button className="sell">sell</button>
+          <button className="create">create</button>
           <button
             onClick={onConnectWallet}
             className={

@@ -1,7 +1,5 @@
 import React from "react";
 import SiteHeader from "./components/Siteheader";
-// import GrievanceForm from "./components/GrievanceForm";
-// import Footer from "./components/Footer";
 import Home_nft from "./components/Home_nft";
 
 

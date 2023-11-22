@@ -4,6 +4,10 @@
   padding: 10px;
 }
 
+.Name{
+  padding-top: 25px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -29,4 +33,10 @@
 .button:hover {
   background-color: #0056b3; /* Button background color on hover */
   /* Add any other styles for the button on hover */
+}
+
+.home,.sell,.create{
+  height: 50px;
+  width: 80px;
+  padding-right: 30px;
 }
