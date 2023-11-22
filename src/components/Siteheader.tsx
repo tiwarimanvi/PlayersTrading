@@ -28,9 +28,9 @@ function SiteHeader() {
           </div>
         </div>
         <div className="links">
-          <Link to='/home' className="home" >home</Link>
-          <Link to='/sellnft' className="sell">sell</Link>
-          <Link to='/createnft' className="create">create</Link>
+          <Link to='/home' className="home" >HOME</Link>
+          <Link to='/sellnft' className="sell">SELL</Link>
+          <Link to='/createnft' className="create">CREATE</Link>
           <button
             onClick={onConnectWallet}
             className={

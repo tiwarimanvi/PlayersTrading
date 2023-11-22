@@ -36,7 +36,8 @@
 }
 
 .home,.sell,.create{
-  height: 50px;
-  width: 80px;
-  padding-right: 30px;
+  height: 70px;
+  width: 100px;
+  margin-right: 30px;
+  size: 30px;
 }
