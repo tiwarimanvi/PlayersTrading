@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { connectWallet, getAccount } from "../utils/wallet";
 import "../css/Siteheader.css";
+import {Link} from 'react-router-dom'
+
 function SiteHeader() {
   const [account, setAccount] = useState<string>("");
   const [active, setActive] = useState(false);
@@ -26,9 +28,9 @@ function SiteHeader() {
           </div>
         </div>
         <div className="links">
-          <button className="home">home</button>
-          <button className="sell">sell</button>
-          <button className="create">create</button>
+          <Link to='/home' className="home" >home</Link>
+          <Link to='/sellnft' className="sell">sell</Link>
+          <Link to='/createnft' className="create">create</Link>
           <button
             onClick={onConnectWallet}
             className={

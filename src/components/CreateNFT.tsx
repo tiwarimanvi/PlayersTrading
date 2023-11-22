@@ -1,6 +1,8 @@
 import React, { useState, ChangeEvent } from "react";
 import { isAdmin } from "./isAdmin";
 import axios from "axios";
+import SiteHeader from "./Siteheader";
+import FooterNFT from "./FooterNFT";
 
 const CreateNFT: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -73,6 +75,8 @@ const CreateNFT: React.FC = () => {
   };
 
   return (
+    <div>
+    <SiteHeader/>
     <div style={{ maxWidth: "800px", margin: "auto" }}>
       <h1>Create NFT</h1>
       <div style={{ display: "flex", gap: "2rem", alignItems: "flex-start" }}>
@@ -139,13 +143,16 @@ const CreateNFT: React.FC = () => {
           padding: "0.5rem 1rem",
           borderRadius: "5px",
           cursor: "pointer",
-          marginBottom: '130px'  //to be changed
+          marginBottom: '110px'  //to be changed
         }}
         onClick={handleUpload}
       >
         Create
       </button>
     </div>
+    <FooterNFT/>
+    </div>
+
   );
 };
 
