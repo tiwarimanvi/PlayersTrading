@@ -1,4 +1,8 @@
-// TODO 1 - Setup Tezos Toolkit
+import { TezosToolkit } from "@taquito/taquito";
+import { wallet } from "./wallet";
 
-// TODO 3 - Specify wallet provider for Tezos instance
+export const tezos = new TezosToolkit("https://ghostnet.smartpy.io")
+
+tezos.setWalletProvider(wallet)
  
+    
