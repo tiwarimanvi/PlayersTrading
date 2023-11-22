@@ -1,8 +1,8 @@
 import React from "react";
 import SiteHeader from "./components/Siteheader";
-// import GrievanceForm from "./components/GrievanceForm";
-// import Footer from "./components/Footer";
 import Home_nft from "./components/Home_nft";
+// import CreateNFT from "./components/CreateNFT";
+import FooterNFT from "./components/FooterNFT";
 
 
 const App: React.FC = () => {
@@ -11,8 +11,7 @@ const App: React.FC = () => {
     <div className="">
       <SiteHeader></SiteHeader>
       <Home_nft/>
-      {/* <GrievanceForm></GrievanceForm>
-      <Footer></Footer> */}
+      <FooterNFT></FooterNFT>
 
     </div>
   );
